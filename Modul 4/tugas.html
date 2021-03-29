@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Registrasi Anggota Perpustakaan UNS </title></head>
+    <body>
+        <form action="register.php" method="POST">
+            <fieldset>
+                <legend><h3><b> Form Registrasi Anggota Perpustakaan UNS </b></h3></legend>
+                <p>
+                    <label>Nama : </label>
+                    <input type="text" name="username" placeholder="Nama Lengkap sesuai KTP">
+                </p>
+                <p>
+                    <label>Kode Anggota : </label>
+                    <input type="text" name="kode_anggota" placeholder="kode">
+                </p>
+                <p>
+                    <label>Tanggal Lahir Anggota : </label>
+                    <input type="date" name="tgllahir">
+                </p>
+                <p>
+                    <label>Alamat : </label>
+                    <textarea name="info"></textarea>
+                </p>
+                <p>
+                    <label>Jenis Kelamin</label>
+                    <label><input type="radio" name="tipe" value="male">Laki-laki</label>
+                    <label><input type="radio" name="tipe" value="femal">Perempuan</label>
+                </p>
+                <p>
+                    <label>Perpustakaan UNS cabang :</label>
+                    <select name="tpakun">
+                        <option value="Kentingan">Kentingan</option>
+                        <option value="Pabelan">Pabelan</option>
+                        <option value="Kleco">Kleco</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Daftar">
+                </p>
+            </fieldset>
+        </form>
+        <br>
+        <table cellpadding=5 cellspacing=1 border=3>
+            <caption><h3><b>Tabel Data Pendaftaraan Anggota Perpus UNS</b></h3></caption>
+            <br>
+            <tr>
+                <th>No.</th>
+                <th>Kode Anggota</th>
+                <th>Nama Anggota</th>
+                <th>Tanggal Lahir</th>
+                <th>Alamat</th>
+                <th>Jenis Kelamin</th>
+                <th>Cabang</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </body>
+</html>
