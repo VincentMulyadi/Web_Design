@@ -1,0 +1,40 @@
+<html>
+    <head><title>Biodata</title></head>
+    <body>
+        <script>
+            function data(){
+                var nama = (document.dform.nama.value);
+                var alamat = (document.dform.alamat.value);
+                document.dform.onama.value = nama;
+                document.dform.oalamat.value = alamat;
+                var jurusan = (document.dform.jurusan.value);
+                document.dform.ojurusan.value = jurusan;
+                var keterangan = (document.dform.keterangan.value);
+                document.dform.oket.value = keterangan;
+            }
+        </script>
+        <form name="dform">
+            <h1>Masukkan biodata anda</h1>
+
+<pre>
+    nama : <input type="text" name="nama">
+    alamat : <input type="text" name="alamat">
+    gender : <input type="radio" value="perempuan" name="keterangan">perempuan 
+    <input type="radio" value="laki-laki" name="keterangan">Laki-laki
+    jurusan : <select name="jurusan">
+        <option value="teknik informatika">Teknik informatika</option>
+        <option value="teknik sipil">Teknik Sipil</option>
+        <option value="teknik mesin">Teknik Mesin</option>
+    </select>
+</pre>
+    <input type="button" value="masukkan" onclick="data()">
+    <input type="reset" value="reset">
+
+    <h2>Keluaran : </h2>
+    nama : <input type="text" name="onama">
+    alamat : <input type="text" name="oalamat">
+    jurusan : <input type="text" name="ojurusan">
+    gender : <input type="text" name="oket">
+        </form>
+    </body>
+</html>
